@@ -11,7 +11,7 @@ variable "target_bucket_name" {
 }
 
 variable "lambda_function_name" {
-  description = "Name of the Lambda function"
+  description = "Name of Lambda function"
   type        = string
   default     = "greetings-lambda-function"
 }
