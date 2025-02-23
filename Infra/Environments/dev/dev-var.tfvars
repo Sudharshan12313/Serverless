@@ -1,0 +1,5 @@
+source_bucket_name = "source-bucket-test321"
+target_bucket_name = "target-bucket-test321"
+lambda_function_name = "greetings-lambda-function"
+lambda_source_file = "../../../App/index.mjs"
+lambda_output_path = "lambda.zip"
