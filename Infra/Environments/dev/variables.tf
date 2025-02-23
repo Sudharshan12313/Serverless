@@ -29,14 +29,14 @@ variable "lambda_output_path" {
 }
 
 
-variable "api_name" {
+/*variable "api_name" {
   description = "Name of the API Gateway"
   type        = string
   default     = "greeting_api"
-}
+}*/
 
-variable "stage_name" {
+/*variable "stage_name" {
   description = "Deployment stage name"
   type        = string
   default     = "prod"
-}
+}*/
