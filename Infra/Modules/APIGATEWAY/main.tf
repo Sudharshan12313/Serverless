@@ -114,13 +114,13 @@ resource "aws_api_gateway_method_response" "method_response_200" {
   }
 }
 
-# Create a Lambda event-source mapping to enable Lambda to poll from the queue
+/*# Create a Lambda event-source mapping to enable Lambda to poll from the queue
 resource "aws_lambda_event_source_mapping" "greeting_sqs_mapping" {
   event_source_arn = aws_sqs_queue.greeting_queue.arn
   function_name    = var.lambda_function_name
   batch_size       = 1
 
-}
+}*/
 
 # Create a new API Gateway deployment
 resource "aws_api_gateway_deployment" "greeting_api_deployment" {
