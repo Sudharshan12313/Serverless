@@ -120,7 +120,6 @@ resource "aws_lambda_event_source_mapping" "greeting_sqs_mapping" {
   function_name    = var.lambda_function_name
   batch_size       = 1
 
-  depends_on = [aws_iam_role_policy_attachment.greeting_lambda_sqs_policy_attachment ]
 }
 
 # Create a new API Gateway deployment
@@ -138,6 +137,6 @@ resource "aws_api_gateway_deployment" "greeting_api_deployment" {
 
   depends_on = [
     aws_api_gateway_method.greet_method,
-    aws_api_gateway_integration.greet_lambda_integration
+    aws_api_gateway_integration.greet_method_integration
   ]
 }
