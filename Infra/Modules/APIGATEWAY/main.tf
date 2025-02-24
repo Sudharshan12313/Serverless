@@ -11,7 +11,7 @@ resource "aws_api_gateway_rest_api" "greeting_api" {
 resource "aws_api_gateway_resource" "greet_resource" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
   parent_id   = aws_api_gateway_rest_api.greeting_api.root_resource_id
-  path_part   = "/greet"
+  path_part   = "greet"
 }
 
 # Create an API Method
